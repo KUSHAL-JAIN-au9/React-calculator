@@ -20,7 +20,7 @@ To set up the React Calculator project locally, follow these steps:
 
 1. Clone the repository to your local machine using the following command:
    ```
-   git clone <repository_url>
+   git clone https://github.com/KUSHAL-JAIN-au9/React-calculator.git
    ```
 
 2. Navigate to the project directory:
