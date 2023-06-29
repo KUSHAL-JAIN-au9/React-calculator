@@ -11,6 +11,7 @@ function App() {
   const [operator, setOperator] = useState(null);
   const [total, setTotal] = useState(false);
 
+  //performs concatinate the numbers
   const inputNum = (e) => {
     if (curState.includes(".") && e.target.innerText === ".") return;
 
@@ -43,6 +44,7 @@ function App() {
     }
   };
 
+  //performs calculations on entire expression including numbers and operators
   const equals = (e) => {
     if (e?.target.innerText === "=") {
       setTotal(true);
@@ -75,6 +77,7 @@ function App() {
     setCurState("");
   };
 
+  // toggle between negative and non negetive numbers
   const minusPlus = () => {
     if (curState.charAt(0) === "-") {
       setCurState(curState.substring(1));
@@ -89,6 +92,7 @@ function App() {
       : setCurState(String(parseFloat(curState) / 100));
   };
 
+  //resets the fileld
   const reset = () => {
     setPreState("");
     setCurState("");
